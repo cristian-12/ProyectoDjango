@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portafolio | {% block title %} {% endblock %}</title>
+	<!-- los archivos estaticos -->
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="% static 'core/assets/css/grayscale.min.css' %">
+	<link rel="stylesheet" type="text/css" href="% static 'core/img/icono1.png' %">
+	<link rel="stylesheet" type="text/css" href="% static 'core/vendor/bootstrap/css/bootstrap.css' %">
+	<link rel="stylesheet" type="text/css" href="% static 'core/vendor/fontawesome-free/css/all.css' %">
+</head>
+<body><!-- 
+	contenido html, esta ser nuestra base para poder mostrar -->
+	{% block content %} {% endblock %}
+
+		<link rel="stylesheet" type="text/css" href="% static 'core/js/grayscale.min.js' %">
+		<link rel="stylesheet" type="text/css" href="% static 'core/vendor/jquery/jquery.min.js' %">
+		<link rel="stylesheet" type="text/css" href="% static 'core/vendor/bootstrap/js/bootstrap.js' %">
+</body>
+</html>
